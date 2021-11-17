@@ -10,6 +10,15 @@
 
 This tiny python based script allows you to download map tiles from Google, Bing, Open Street Maps, ESRI, NASA, and other providers. This script comes with an easy to use web based map UI for selecting the area and previewing tiles.
 
+** Installation on Raspberry Pi for use with chasemapper **
+sudo apt-get install python3-pip
+pip3 install pillow
+sudo apt-get install libopenjp2-7-dev
+git clone https://github.com/Moll1989/MapTilesDownloader
+cd MapTilesDownloader
+python3 server.py
+
+
 **Just run the script via command line**
 
 ```sh
