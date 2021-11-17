@@ -16,7 +16,7 @@ sudo apt-get install python3-pip libopenjp2-7-dev
 pip3 install pillow
 cd /home/pi
 git clone https://github.com/Moll1989/MapTilesDownloader
-sudo mv /MapTilesDownloader/maptilesdownloader.service /etc/systemd/system/maptilesdownloader.service
+sudo mv MapTilesDownloader/maptilesdownloader.service /etc/systemd/system/maptilesdownloader.service
 sudo chmod 644 /etc/systemd/system/maptilesdownloader.service
 sudo systemctl daemon-reload
 sudo systemctl enable maptilesdownloader
