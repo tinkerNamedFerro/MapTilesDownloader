@@ -12,7 +12,7 @@ This tiny python based script allows you to download map tiles from Google, Bing
 
 **Installation on Raspberry Pi for use with chasemapper**
 ```sh
-sudo apt-get install python3-pip libopenjp2-7-dev
+sudo apt-get install python3-pip libopenjp2-7-dev libtiff5
 pip3 install pillow
 cd /home/pi
 git clone https://github.com/Moll1989/MapTilesDownloader
@@ -27,7 +27,7 @@ Then open up the device you use for viewing chasemapper and navigate to port 500
 
 ## Requirements
 
-Needs **Python 3.0+**, [Pillow](https://pypi.org/project/Pillow/) library, libopenjp2-7-dev and a modern web browser. 
+Needs **Python 3.0+**, [Pillow](https://pypi.org/project/Pillow/) library, libopenjp2-7-dev, libtiff5 and a modern web browser. 
 
 ## Purpose
 
