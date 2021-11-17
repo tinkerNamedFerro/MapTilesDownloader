@@ -19,38 +19,23 @@ cd MapTilesDownloader/src
 python3 server.py
 ```
 
-**Just run the script via command line**
-
-```sh
-python server.py
-```
-
-Then open up your web browser and navigate to `http://localhost:8080`. The output map tiles will be in the `output\{timestamp}\` directory by default.
+Then open up the device you use for viewing chasemapper and navigate to port 5002 instead of 5001. The output map tiles will be in the `~/Maps/` directory by default.
 
 ## Requirements
 
-Needs **Python 3.0+**, [Pillow](https://pypi.org/project/Pillow/) library, and a modern web browser. Other Python versions could work but aren't yet tested. If you can't install manually, try docker for easy setup.
-
-## Via Docker
-
-Docker is a pretty simple way to install and contain applications. [Install Docker on your system](https://www.docker.com/products/docker-desktop), and paste this on your command line:
-
-```sh
-docker run -v $PWD/output:/app/output/ -p 8080:8080 -it aliashraf/map-tiles-downloader
-```
-
-Now open the browser and head over to `http://localhost:8080`. The downloaded maps will be stored in the `output` directory.
+Needs **Python 3.0+**, [Pillow](https://pypi.org/project/Pillow/) library, libopenjp2-7-dev and a modern web browser. 
 
 ## Purpose
 
-I design map related things as a hobby, and often I have to work with offline maps that require tiles to be stored on my local system. Downloading tiles is a bit of a headache, and the current solutions have user experience issues. So I built this tiny script in a couple of hours to speed up my work.
+This fork has been customised to be suitable for running alongside chasemapper on a Raspberry Pi.  This makes it really easy to jump on and download maps before going on a balloon chase.
+
+for more information on chasemapper visit https://github.com/projecthorus/chasemapper
 
 ## Features
 
 - Super easy to use map UI to select region and options
 - Multi-threading to download tiles in parallel
 - Cross platform, use any OS as long as it has Python and a browser
-- Dockerfile available for easy setup
 - Supports 2x/Hi-Res/Retina/512x512 tiles my merging multiple tiles
 - Supports downloading to file as well as mbtile format
 - Select multiple zoom levels in one go
