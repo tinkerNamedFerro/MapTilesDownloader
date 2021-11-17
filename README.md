@@ -14,9 +14,13 @@ This tiny python based script allows you to download map tiles from Google, Bing
 ```sh
 sudo apt-get install python3-pip libopenjp2-7-dev
 pip3 install pillow
+cd /home/pi
 git clone https://github.com/Moll1989/MapTilesDownloader
-cd MapTilesDownloader/src
-python3 server.py
+sudo mv /MapTilesDownloader/maptilesdownloader.service /etc/systemd/system/maptilesdownloader.service
+sudo chmod 644 /etc/systemd/system/maptilesdownloader.service
+sudo systemctl daemon-reload
+sudo systemctl enable maptilesdownloader
+sudo systemctl start maptilesdownloader
 ```
 
 Then open up the device you use for viewing chasemapper and navigate to port 5002 instead of 5001. The output map tiles will be in the `~/Maps/` directory by default.
