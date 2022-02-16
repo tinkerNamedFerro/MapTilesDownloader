@@ -11,6 +11,8 @@ $(function() {
 	var requests = [];
 
 	var sources = {
+		
+		"Get Lost Maps": "https://live.getlost.com.au/{z}/{x}/{y}.jpg",
 
 		"Bing Maps": "http://ecn.t0.tiles.virtualearth.net/tiles/r{quad}.jpeg?g=129&mkt=en&stl=H",
 		"Bing Maps Satellite": "http://ecn.t0.tiles.virtualearth.net/tiles/a{quad}.jpeg?g=129&mkt=en&stl=H",
