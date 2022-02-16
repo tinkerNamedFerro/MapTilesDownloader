@@ -14,6 +14,8 @@ $(function() {
 		
 		"Get Lost Maps": "https://live.getlost.com.au/{z}/{x}/{y}.jpg",
 
+                "div-1A": "",
+
 		"Bing Maps": "http://ecn.t0.tiles.virtualearth.net/tiles/r{quad}.jpeg?g=129&mkt=en&stl=H",
 		"Bing Maps Satellite": "http://ecn.t0.tiles.virtualearth.net/tiles/a{quad}.jpeg?g=129&mkt=en&stl=H",
 		"Bing Maps Hybrid": "http://ecn.t0.tiles.virtualearth.net/tiles/h{quad}.jpeg?g=129&mkt=en&stl=H",
@@ -51,8 +53,8 @@ $(function() {
 		map = new mapboxgl.Map({
 			container: 'map-view',
 			style: 'mapbox://styles/aliashraf/ck6lw9nr80lvo1ipj8zovttdx',
-			center: [-73.983652, 40.755024], 
-			zoom: 12
+			center: [138.60029, -34.92920], 
+			zoom: 10
 		});
 
 		geocoder = new MapboxGeocoder({ accessToken: mapboxgl.accessToken });

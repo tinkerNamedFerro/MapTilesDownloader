@@ -91,7 +91,7 @@
 
 			<div class="row">
 				<div class="input-field col s10">
-					<input id="source-box" type="text" value='http://ecn.t0.tiles.virtualearth.net/tiles/a{quad}.jpeg?g=129&mkt=en&stl=H'>
+					<input id="source-box" type="text" value='https://live.getlost.com.au/{z}/{x}/{y}.jpg'>
 					<label for="source-box">Map Tile Source</label>
 				</div>
 				<div class="input-field col s2">
@@ -101,6 +101,13 @@
 					</ul>
 				</div>
 			</div>
+
+
+                        <div class="input-field col s12">
+                                <input id="output-directory-box" type="text" value="MyMaps">
+                                <label for="output-directory-box">Map layer name in chasemapper <br>(Output Directory)</label>
+                        </div>
+
 
 			<div class='center-align'>
 				<a class="waves-effect waves-light z-depth-0 btn-small orange darken-3" id='grid-preview-button'>Preview Grid</a>
@@ -126,12 +133,7 @@
 			</div>
 
 			<div class="input-field col s12">
-				<input id="output-directory-box" type="text" value="MyMaps">
-				<label for="output-directory-box">Output directory</label>
-			</div>
-
-			<div class="input-field col s12">
-				<select id="output-type" type="text">
+				<select id="output-type" type="text" disabled>
 					<option value="directory">Directory</option>
 					<option value="mbtiles">Mbtiles</option>
 					<option value="repo">Repo</option>
@@ -140,12 +142,12 @@
 			</div>
 
 			<div class="input-field col s12">
-				<input id="output-file-box" type="text" value="{z}/{x}/{y}.png">
+				<input id="output-file-box" type="text" value="{z}/{x}/{y}.png" disabled>
 				<label for="output-file-box">Output file</label>
 			</div>
 
 			<div class="input-field col s12">
-				<input id="parallel-threads-box" type="text" value="4">
+				<input id="parallel-threads-box" type="text" value="8">
 				<label for="parallel-threads-box">Parallel downloads</label>
 			</div>
 		</div>
