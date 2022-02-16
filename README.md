@@ -21,6 +21,7 @@ sudo chmod 644 /etc/systemd/system/maptilesdownloader.service
 sudo systemctl daemon-reload
 sudo systemctl enable maptilesdownloader
 sudo systemctl start maptilesdownloader
+ln -s home/pi/MapTilesDownloader/src/output /home/pi/Maps
 ```
 
 Then open up the device you use for viewing chasemapper and navigate to port 5002 instead of 5001. The output map tiles will be in the `~/Maps/` directory by default.
